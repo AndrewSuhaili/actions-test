@@ -5,6 +5,8 @@ on:
       - main
   schedule:
     - cron: '*/5 * * * *'
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,3 +15,4 @@ jobs:
     - name: Running
       run: |
         echo "Running!"
+        date
